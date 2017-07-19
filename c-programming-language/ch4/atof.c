@@ -12,7 +12,7 @@ int main() {
     sum = 0;
     while (getLine(line, MAX_LINE) > 0) {
         printf("\t%g\n", sum += atof(line));
-        test();
+        test();// link error because static
     }
     return 0;
 }
@@ -20,7 +20,7 @@ int main() {
 double atof(char s[]) {
     int i, sign;
     double val, power;
-    for (i = 0; isspace(i); i++)
+    for (i = 0; isspace(s[i]); i++)
         ;
     sign = (s[i] == '-') ? -1 : 1;
     if (s[i] == '-' || s[i] == '+') 

@@ -1,6 +1,11 @@
 {
     "files.associations": {
         "stdio.h": "c",
-        "stdlib.h": "c"
+        "stdlib.h": "c",
+        "stddef.h": "c",
+        "_size_t.h": "c",
+        "_string.h": "c",
+        "os_defines.h": "c",
+        "_null.h": "c"
     }
 }

@@ -1,7 +1,7 @@
 #include <stdio.h>
 #define MAX_LINE 1000
 
-int getLine(char line[], int max_length);
+size_t getLine(char line[], int max_length);
 int stringIndex(char source[], char searchfor[]);
 
 char pattern[] = "ould";
@@ -18,15 +18,15 @@ int main() {
     return found;
 }
 
-int getLine(char line[], int max_length) {
+size_t getLine(char *s, int max_length) {
     int c,i;
-    i = 0;
+    char *start = s;
     while (--max_length > 0 && (c = getchar()) != EOF && c != '\n')
-        line[i++] = c;
+        *s++ = c;
     if (c == '\n')
-        line[i++] = c;
-    line[i] = 0;
-    return i;
+        *s++ = c;
+    *s = 0;
+    return s-start;
 }
 
 int stringIndex(char source[], char searchfor[]) {
