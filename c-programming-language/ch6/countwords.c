@@ -11,6 +11,14 @@ struct tnode {
     struct tnode * right;
 };
 
+typedef struct node *TreeNodePtr;
+typedef struct node{
+    char *word;
+    int count;
+    TreeNodePtr left;
+    TreeNodePtr right;
+}TreeNode;
+
 struct tnode *addtree(struct tnode *, char *);
 void addtree2(struct tnode **, char *);
 void treeprint(struct tnode *);

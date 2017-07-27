@@ -10,6 +10,8 @@ void writelines(char *lineptr[], int nlines);
 void qsort(void *lineptr[], int left, int right, int (*comp)(void *, void *), int reverse);
 
 int numcmp(char *, char *);
+typedef int (*PFI)(char *, char *);
+PFI numcmp2, strcmp2;
 
 int main(int argc, char *argv[]) {
     int c;

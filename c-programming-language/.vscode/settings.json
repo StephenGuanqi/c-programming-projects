@@ -6,6 +6,13 @@
         "_size_t.h": "c",
         "_string.h": "c",
         "os_defines.h": "c",
-        "_null.h": "c"
+        "_null.h": "c",
+        "unistd.h": "c",
+        "stdarg.h": "c",
+        "fcntl.h": "c",
+        "_va_list.h": "c",
+        "systemcalls.h": "c",
+        "assert.h": "c",
+        "types.h": "c"
     }
 }
